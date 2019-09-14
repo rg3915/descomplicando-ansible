@@ -4,9 +4,9 @@
   gather_facts: no
   pre_tasks:
   - name: 'atualizando repo'
-    raw: 'apt-get update'
+    shell: 'apt-get update'
   - name: 'instalando o python'
-    raw: 'apt-get install -y python'
+    shell: 'apt-get install -y python'
   roles:
   - install-k8s
 
