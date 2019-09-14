@@ -3,6 +3,8 @@
   user: ubuntu
   gather_facts: no
   pre_tasks:
+  - name: 'atualizando repo'
+    raw: 'apt-get update'
   - name: 'instalando o python'
     raw: 'apt-get install -y python'
   roles:
